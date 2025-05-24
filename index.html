@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8" />
     <title>TOP - Rock, Paper, Scissors</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <div id="container">
+        <h1>Rock, Papers, Scissors</h1>
+        <div id="scoreboard">
+            <p>
+                Human score:
+                <span class="human-score">0</span>
+            </p>
+            <p>
+                Computer score:
+                <span class="computer-score">0</span>
+            </p>
+        </div>
+        <div id="current-round-message">
+            <p class="current-round-winner"></p>
+        </div>
+        <div id="play-buttons">
+            <button class="play-round" value="rock">Rock</button>
+            <button class="play-round" value="paper">Paper</button>
+            <button class="play-round" value="scissors">Scissors</button>
+        </div>
+        <div id="winner-message-container">
+            <p class="winner-message"></p>
+        </div>
+    </div>
 </body>
 </html>
